@@ -1,10 +1,78 @@
 .headerSlider{
     display: grid;
     grid-template-columns: 2fr 5fr ;
+    
+}
+li{
+    list-style: none;
+}
+.somestuff{
+    height: 40px;
 }
 .categories{
     background-color: chartreuse;
+    line-height: 25px;
+   
+
+    ul{
+        text-align: left;
+        li{
+            background-color: darkgray;
+            border-top : 1px solid black;
+            padding: 2px;
+        a{
+            color: #212121;
+            padding: 10px 0px 10px 40px;
+            border-bottom: 1px dotted #CDCDCD;
+        }
+    }}
 }
 .slider{
     background-color: crimson;
 }
+
+  .masthead {
+    overflow: hidden;
+    color: #FFF;
+    padding: 1em;
+    background-color: #404040;
+  
+    &.responsive-image {
+      background-position: center;
+      background-attachment: scroll;
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+         -moz-background-size: cover;
+           -o-background-size: cover;
+              background-size: cover;
+    }
+  }
+  
+  .masthead .entry-header {
+    font-weight: 300;
+    overflow: auto;
+  }
+  
+  
+  .masthead .entry-title {
+    font-size: 2.5;
+    line-height: 1;
+    font-weight: 700;
+    margin: 0 0 0.25em 0;
+  
+    @media screen and (min-width: 640px) {
+      max-width: 650px;
+      font-size: 4em;
+    }
+  }
+  
+  
+  .masthead .entry-subtitle {
+    font-family: "freight-text-pro";
+    font-style: italic;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 0.35em;
+    color: #9BA800;
+    font-size: 1.5em;
+  }
