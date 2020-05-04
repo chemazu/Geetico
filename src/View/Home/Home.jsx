@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import "./Home.scss"
 import Header from "../../Custom/Header/Header"
+import Button from '../../Custom/Button/Button'
 
 export class Home extends Component {
     
@@ -23,12 +24,13 @@ export class Home extends Component {
                         </ul>
                     </div>
                     <div class="masthead responsive-image slider">
-   <header class="entry-header">
-      <h1 class="entry-title">Heading Spaced with padding</h1>
-      <h2 class="entry-subtitle">Some sort of lovely supporting title</h2>
-    </header>
-  </div>
+                        <header class="entry-header">
+                            <h1 class="entry-title">Heading Spaced with padding</h1>
+                            <h2 class="entry-subtitle">Some sort of lovely supporting<Button content="Shop Now"/></h2>
+                        </header>
+                    </div>
                 </div>
+                <p>Top Products</p>
             </div>
         )
     }

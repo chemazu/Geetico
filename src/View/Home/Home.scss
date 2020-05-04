@@ -1,6 +1,7 @@
 .headerSlider{
     display: grid;
     grid-template-columns: 2fr 5fr ;
+    height: 400px;
     
 }
 li{
@@ -35,7 +36,7 @@ li{
     overflow: hidden;
     color: #FFF;
     padding: 1em;
-    background-color: #404040;
+    background-image: url(../../Custom/Images/1.jpg);
   
     &.responsive-image {
       background-position: center;
