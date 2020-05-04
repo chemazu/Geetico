@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Geetico/static/css/main.478b6ed1.chunk.css",
-    "main.js": "/Geetico/static/js/main.8d54d747.chunk.js",
-    "main.js.map": "/Geetico/static/js/main.8d54d747.chunk.js.map",
+    "main.css": "/Geetico/static/css/main.97b46cb0.chunk.css",
+    "main.js": "/Geetico/static/js/main.7a91e559.chunk.js",
+    "main.js.map": "/Geetico/static/js/main.7a91e559.chunk.js.map",
     "runtime-main.js": "/Geetico/static/js/runtime-main.0471bccf.js",
     "runtime-main.js.map": "/Geetico/static/js/runtime-main.0471bccf.js.map",
     "static/js/2.85f90f62.chunk.js": "/Geetico/static/js/2.85f90f62.chunk.js",
     "static/js/2.85f90f62.chunk.js.map": "/Geetico/static/js/2.85f90f62.chunk.js.map",
     "index.html": "/Geetico/index.html",
-    "precache-manifest.1161b071319f50e6e0428ee2d9921566.js": "/Geetico/precache-manifest.1161b071319f50e6e0428ee2d9921566.js",
+    "precache-manifest.3e67072b046ceba046bcae0ec7fef7a4.js": "/Geetico/precache-manifest.3e67072b046ceba046bcae0ec7fef7a4.js",
     "service-worker.js": "/Geetico/service-worker.js",
-    "static/css/main.478b6ed1.chunk.css.map": "/Geetico/static/css/main.478b6ed1.chunk.css.map",
+    "static/css/main.97b46cb0.chunk.css.map": "/Geetico/static/css/main.97b46cb0.chunk.css.map",
     "static/js/2.85f90f62.chunk.js.LICENSE.txt": "/Geetico/static/js/2.85f90f62.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0471bccf.js",
     "static/js/2.85f90f62.chunk.js",
-    "static/css/main.478b6ed1.chunk.css",
-    "static/js/main.8d54d747.chunk.js"
+    "static/css/main.97b46cb0.chunk.css",
+    "static/js/main.7a91e559.chunk.js"
   ]
 }
