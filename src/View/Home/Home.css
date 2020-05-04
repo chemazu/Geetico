@@ -1,0 +1,15 @@
+.headerSlider {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 5fr;
+      grid-template-columns: 2fr 5fr;
+}
+
+.categories {
+  background-color: chartreuse;
+}
+
+.slider {
+  background-color: crimson;
+}
+/*# sourceMappingURL=Home.css.map */
