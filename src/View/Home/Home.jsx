@@ -23,11 +23,12 @@ export class Home extends Component {
                             <li><a href="/">Appliances</a></li>
                         </ul>
                     </div>
-                    <div class="masthead responsive-image slider">
-                        <header class="entry-header">
-                            <h1 class="entry-title">Heading Spaced with padding</h1>
-                            <h2 class="entry-subtitle">Some sort of lovely supporting<Button content="Shop Now"/></h2>
-                        </header>
+                    <div className="overlay">
+                    <div className="slider">
+                    <h1 class="slider_title">Heading Spaced with padding</h1>
+                    <h2 class="slider_subtitle">Some sort of lovely supporting text</h2>
+                    <div className="buttonDiv"><Button content="Shop Now"/></div>
+                    </div>
                     </div>
                 </div>
                 <p>Top Products</p>

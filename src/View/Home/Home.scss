@@ -1,3 +1,4 @@
+$h1:45px;
 .headerSlider{
     display: grid;
     grid-template-columns: 2fr 5fr ;
@@ -28,52 +29,72 @@ li{
         }
     }}
 }
+.overlay{
+    background-color: black;
+    z-index: 9
+}
 .slider{
     background-color: crimson;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../../Custom/Images/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+    text-align: left;
+    padding: 75px;
+    color:#fff;
+    line-height: 40px;
+    h1{
+        font-size: $h1;
+        line-height: 1;
+        font-weight: 700;
+        margin: 0 0 0.25em 0;
+    }
+    
 }
 
-  .masthead {
-    overflow: hidden;
-    color: #FFF;
-    padding: 1em;
-    background-image: url(../../Custom/Images/1.jpg);
+//   .masthead {
+//     overflow: hidden;
+//     color: #FFF;
+//     padding: 1em;
+//     background-image: url(../../Custom/Images/1.jpg);
   
-    &.responsive-image {
-      background-position: center;
-      background-attachment: scroll;
-      background-repeat: no-repeat;
-      -webkit-background-size: cover;
-         -moz-background-size: cover;
-           -o-background-size: cover;
-              background-size: cover;
-    }
-  }
+//     &.responsive-image {
+//       background-position: center;
+//       background-attachment: scroll;
+//       background-repeat: no-repeat;
+//       -webkit-background-size: cover;
+//          -oz-background-size: cover;
+//            -o-background-size: cover;
+//               background-size: cover;
+//     }
+//   }
   
-  .masthead .entry-header {
-    font-weight: 300;
-    overflow: auto;
-  }
-  
-  
-  .masthead .entry-title {
-    font-size: 2.5;
-    line-height: 1;
-    font-weight: 700;
-    margin: 0 0 0.25em 0;
-  
-    @media screen and (min-width: 640px) {
-      max-width: 650px;
-      font-size: 4em;
-    }
-  }
+//   .masthead .entry-header {
+//     font-weight: 300;
+//     overflow: auto;
+//   }
   
   
-  .masthead .entry-subtitle {
-    font-family: "freight-text-pro";
-    font-style: italic;
-    line-height: 1.25;
-    margin-top: 0;
-    margin-bottom: 0.35em;
-    color: #9BA800;
-    font-size: 1.5em;
-  }
+//   .masthead .entry-title {
+//     font-size: 2.5;
+//     line-height: 1;
+//     font-weight: 700;
+//     margin: 0 0 0.25em 0;
+  
+//     @media screen and (min-width: 640px) {
+//       max-width: 650px;
+//       font-size: 4em;
+//     }
+//   }
+  
+  
+//   .masthead .entry-subtitle {
+//     font-family: "freight-text-pro";
+//     font-style: italic;
+//     line-height: 1.25;
+//     margin-top: 0;
+//     margin-bottom: 0.35em;
+//     color: #9BA800;
+//     font-size: 1.5em;
+//   }
