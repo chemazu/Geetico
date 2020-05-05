@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f0a09089ec964a9b6ab7a300a09af15b",
+    "revision": "61acfd827edfd14c9a58628270e4b450",
     "url": "/Geetico/index.html"
   },
   {
-    "revision": "782faba079d24567fa51",
-    "url": "/Geetico/static/css/main.46f5590d.chunk.css"
+    "revision": "c4cc998ef39cefafb0c3",
+    "url": "/Geetico/static/css/main.bb2cda9a.chunk.css"
   },
   {
     "revision": "cfb484f88d56be9e6f0e",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Geetico/static/js/2.85f90f62.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "782faba079d24567fa51",
-    "url": "/Geetico/static/js/main.1c68807f.chunk.js"
+    "revision": "c4cc998ef39cefafb0c3",
+    "url": "/Geetico/static/js/main.37ae80ab.chunk.js"
   },
   {
     "revision": "b55eeefcbd9c160fb98e",
