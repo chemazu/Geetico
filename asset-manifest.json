@@ -1,24 +1,31 @@
 {
   "files": {
-    "main.css": "/Geetico/static/css/main.d3a31fee.chunk.css",
-    "main.js": "/Geetico/static/js/main.5fd2b595.chunk.js",
-    "main.js.map": "/Geetico/static/js/main.5fd2b595.chunk.js.map",
+    "main.css": "/Geetico/static/css/main.9cfe5259.chunk.css",
+    "main.js": "/Geetico/static/js/main.a75da3ba.chunk.js",
+    "main.js.map": "/Geetico/static/js/main.a75da3ba.chunk.js.map",
     "runtime-main.js": "/Geetico/static/js/runtime-main.0471bccf.js",
     "runtime-main.js.map": "/Geetico/static/js/runtime-main.0471bccf.js.map",
-    "static/js/2.12dc6403.chunk.js": "/Geetico/static/js/2.12dc6403.chunk.js",
-    "static/js/2.12dc6403.chunk.js.map": "/Geetico/static/js/2.12dc6403.chunk.js.map",
+    "static/css/2.930d8355.chunk.css": "/Geetico/static/css/2.930d8355.chunk.css",
+    "static/js/2.5295c099.chunk.js": "/Geetico/static/js/2.5295c099.chunk.js",
+    "static/js/2.5295c099.chunk.js.map": "/Geetico/static/js/2.5295c099.chunk.js.map",
     "index.html": "/Geetico/index.html",
-    "precache-manifest.6163a3a040888b961407b1201f996d86.js": "/Geetico/precache-manifest.6163a3a040888b961407b1201f996d86.js",
+    "precache-manifest.c3a8a953c09817608e7ddfe831a6cf2a.js": "/Geetico/precache-manifest.c3a8a953c09817608e7ddfe831a6cf2a.js",
     "service-worker.js": "/Geetico/service-worker.js",
-    "static/css/main.d3a31fee.chunk.css.map": "/Geetico/static/css/main.d3a31fee.chunk.css.map",
-    "static/js/2.12dc6403.chunk.js.LICENSE.txt": "/Geetico/static/js/2.12dc6403.chunk.js.LICENSE.txt",
+    "static/css/2.930d8355.chunk.css.map": "/Geetico/static/css/2.930d8355.chunk.css.map",
+    "static/css/main.9cfe5259.chunk.css.map": "/Geetico/static/css/main.9cfe5259.chunk.css.map",
+    "static/js/2.5295c099.chunk.js.LICENSE.txt": "/Geetico/static/js/2.5295c099.chunk.js.LICENSE.txt",
     "static/media/Home.scss": "/Geetico/static/media/1.e8b530dc.jpg",
-    "static/media/2.png": "/Geetico/static/media/2.7bfd5266.png"
+    "static/media/2.png": "/Geetico/static/media/2.7bfd5266.png",
+    "static/media/Adverts.jpg": "/Geetico/static/media/Adverts.5315c584.jpg",
+    "static/media/Adverts2.jpg": "/Geetico/static/media/Adverts2.68c975ae.jpg",
+    "static/media/Logo.png": "/Geetico/static/media/Logo.ac5e4a14.png",
+    "static/media/slick-theme.css": "/Geetico/static/media/slick.f97e3bbf.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.0471bccf.js",
-    "static/js/2.12dc6403.chunk.js",
-    "static/css/main.d3a31fee.chunk.css",
-    "static/js/main.5fd2b595.chunk.js"
+    "static/css/2.930d8355.chunk.css",
+    "static/js/2.5295c099.chunk.js",
+    "static/css/main.9cfe5259.chunk.css",
+    "static/js/main.a75da3ba.chunk.js"
   ]
 }
