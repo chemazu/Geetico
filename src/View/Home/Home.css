@@ -15,7 +15,6 @@ li {
 }
 
 .categories {
-  background-color: chartreuse;
   line-height: 25px;
 }
 
@@ -59,5 +58,31 @@ li {
   line-height: 1;
   font-weight: 700;
   margin: 0 0 0.25em 0;
+}
+
+.slider .buttonDiv {
+  padding-top: 30px;
+}
+
+.topProducts {
+  padding: 0 60px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.topProducts h1 {
+  color: green;
+  padding: 20px;
+}
+
+.topProducts .productBar {
+  background-color: #d8cdcd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 15px;
 }
 /*# sourceMappingURL=Home.css.map */

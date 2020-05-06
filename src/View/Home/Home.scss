@@ -12,7 +12,6 @@ li{
     height: 40px;
 }
 .categories{
-    background-color: chartreuse;
     line-height: 25px;
    
 
@@ -50,51 +49,24 @@ li{
         font-weight: 700;
         margin: 0 0 0.25em 0;
     }
+    .buttonDiv{
+        padding-top: 30px;
+    }
     
 }
-
-//   .masthead {
-//     overflow: hidden;
-//     color: #FFF;
-//     padding: 1em;
-//     background-image: url(../../Custom/Images/1.jpg);
-  
-//     &.responsive-image {
-//       background-position: center;
-//       background-attachment: scroll;
-//       background-repeat: no-repeat;
-//       -webkit-background-size: cover;
-//          -oz-background-size: cover;
-//            -o-background-size: cover;
-//               background-size: cover;
-//     }
-//   }
-  
-//   .masthead .entry-header {
-//     font-weight: 300;
-//     overflow: auto;
-//   }
-  
-  
-//   .masthead .entry-title {
-//     font-size: 2.5;
-//     line-height: 1;
-//     font-weight: 700;
-//     margin: 0 0 0.25em 0;
-  
-//     @media screen and (min-width: 640px) {
-//       max-width: 650px;
-//       font-size: 4em;
-//     }
-//   }
-  
-  
-//   .masthead .entry-subtitle {
-//     font-family: "freight-text-pro";
-//     font-style: italic;
-//     line-height: 1.25;
-//     margin-top: 0;
-//     margin-bottom: 0.35em;
-//     color: #9BA800;
-//     font-size: 1.5em;
-//   }
+.topProducts{
+    padding: 0 60px;
+    border-radius:20px ;
+    overflow: hidden;
+    h1{
+        color: green;
+        padding: 20px;
+    }
+    .productBar{
+        background-color: #d8cdcd;
+        display: flex;
+        padding: 30px;
+        justify-content: space-around;
+        margin:15px
+    }
+}

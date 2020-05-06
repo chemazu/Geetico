@@ -16,6 +16,10 @@ body {
   padding-bottom: 10px;
 }
 
+.nav-button {
+  margin: -10px;
+}
+
 .main-nav {
   list-style-type: none;
   display: none;

@@ -1,0 +1,38 @@
+.wrapper {
+  background-color: orange;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.productImageWrapper {
+  background-color: #fff;
+  padding: 5px;
+}
+
+.productDetails {
+  background-color: orchid;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 7fr 3fr;
+      grid-template-columns: 7fr 3fr;
+  padding: 10px;
+}
+
+.productDetails .details {
+  text-align: left;
+  padding-left: 5px;
+  line-height: 25px;
+}
+
+.productDetails .cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=Card.css.map */

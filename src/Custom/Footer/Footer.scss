@@ -1,0 +1,14 @@
+.footer{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    line-height: 20px;
+    background-color: #454545;
+    margin-top: 100px;
+    div{
+        padding:10px;
+        p,h2{
+            padding-bottom: 10px;
+        }
+    }
+}
