@@ -18,10 +18,10 @@ export default function Header() {
                         <a href="/#" className="nav-links">Products</a>
                     </li>
                     <li>
-                        <a href="/#" className="nav-links">Search Bar</a>
+                        <a href="/#" className="nav-links">Search</a>
                     </li>
                     <li>
-                        <a href="/#" className="nav-links">Cart Icon</a>
+                        <a href="/#" className="nav-links">Cart</a>
                     </li>
                     <span>&nbsp;</span>
                     <li>

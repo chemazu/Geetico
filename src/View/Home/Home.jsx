@@ -1,21 +1,32 @@
 import React, { Component } from 'react'
+import Slider from "react-slick";
 import "./Home.scss"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Header from "../../Custom/Header/Header"
 import Button from '../../Custom/Button/Button'
 import Card from "../../Custom/Card/Card"
 import pepsi from "../../Custom/Images/2.png"
 import Footer from '../../Custom/Footer/Footer'
 import PromotionCard from '../../Custom/PromotionCard/PromotionCard'
+import AdvertBanner from '../../Custom/AdvertBanner/AdvertBanner'
+import MailingList from '../../Custom/MailingList/MailingList'
 
 export class Home extends Component {
     
     render() {
+        const settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 7,
+            slidesToScroll: 1
+          };
         return (
             <div>
                 <Header/>
                 <div className="promotions">
-                    <h2>PROMOTIONS</h2>
-                    
+                <p>Welcome to Geetico some lorem ipsum generic text</p>
                 </div>
                 <div className="headerSlider">
                     <div className="categories">
@@ -44,9 +55,27 @@ export class Home extends Component {
                     <Card Name="BigCola" image={pepsi} price="200"/>
                     <Card Name="Rc Cola" image={pepsi} price="200"/>
                 </div>
-                
-                
                 </div>
+                <div className="categorySlider">
+                <Slider {...settings} className="egg">
+                <div className="sliderProduct"><img src={pepsi} alt =''/> <p>N200</p></div>
+                <div className="spacer"></div>
+                <div className="sliderProduct"><img src={pepsi} alt =''/> <p>N200</p></div>
+                <div className="spacer"></div>
+                <div className="sliderProduct"><img src={pepsi} alt =''/> <p>N200</p></div>
+                <div className="spacer"></div>
+                <div className="sliderProduct"><img src={pepsi} alt =''/> <p>N200</p></div>
+                <div className="spacer"></div>
+                <div className="sliderProduct"><img src={pepsi} alt =''/> <p>N200</p></div>
+                <div className="spacer"></div>
+                <div className="sliderProduct"><img src={pepsi} alt =''/> <p>N200</p></div>
+                <div className="spacer"></div>
+                </Slider>
+                </div>
+                <div className="advertSection">
+                    <AdvertBanner/>
+                </div>
+                <MailingList/>
                 <Footer/>
             </div>
         )

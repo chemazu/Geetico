@@ -1,0 +1,21 @@
+.mailingList{
+    background-color:#282828;
+    color:white;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    padding: 30px;
+    img{
+        width:30px;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        label{
+            padding-bottom:20px;
+        }
+    }
+}
+.logo{
+    width: 50%;
+}

@@ -1,0 +1,16 @@
+.advertBanner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+  background-color: green;
+  padding: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.advertBanner img {
+  width: 49%;
+}
+/*# sourceMappingURL=AdvertBanner.css.map */

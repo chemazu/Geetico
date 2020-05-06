@@ -8,8 +8,10 @@ $h1:45px;
 li{
     list-style: none;
 }
-.somestuff{
-    height: 40px;
+.promotions{
+    background-color: grey;
+    padding: 20px;
+    text-align: center;
 }
 .categories{
     line-height: 25px;
@@ -61,6 +63,7 @@ li{
     h1{
         color: green;
         padding: 20px;
+        text-align: left;
     }
     .productBar{
         background-color: #d8cdcd;
@@ -69,4 +72,23 @@ li{
         justify-content: space-around;
         margin:15px
     }
+}
+.categorySlider{
+    background-color: #282828;
+    padding: 60px;
+    margin: 20px;
+    .egg{
+        .sliderProduct{
+            background-color: ivory;
+            width:50px;
+            border : 2px solid   ;
+            margin-left:20px;
+        }
+    }
+
+}
+.advertSection{
+    padding: 10px;
+    background-color: red;
+
 }
