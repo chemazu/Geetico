@@ -95,7 +95,7 @@ li {
   margin: 20px;
 }
 
-.categorySlider .egg .sliderProduct {
+.categorySlider .sliderProductContainer .sliderProduct {
   background-color: ivory;
   width: 50px;
   border: 2px solid;

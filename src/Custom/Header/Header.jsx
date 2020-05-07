@@ -25,7 +25,7 @@ export default function Header() {
                     </li>
                     <span>&nbsp;</span>
                     <li>
-                    <a href="/#" className="nav-links"><Button type="primary" content="Login/Register" /></a>
+                    <a href="/Login" className="nav-links"><Button type="primary" content="Login/Register" /></a>
                     </li>
                 </ul>
             </nav>

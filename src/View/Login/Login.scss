@@ -1,0 +1,30 @@
+// .vl {
+//     border-left: 6px solid green;
+//     height: 500px;
+//   }
+  .loginContainer{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+  .login{
+  
+        form{
+            div{
+                padding: 15px;
+                input{
+                    display: block;
+                    width: 85%;
+                    border: none;
+                    border-bottom: solid 1px;
+                    padding: 1em;
+                    font-size: 1em;
+                    margin: 35px 0 0;
+                    outline: none;
+                    -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+                    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+                    background-color: transparent;
+                  }
+            }   
+        }
+  }
+  
