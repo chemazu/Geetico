@@ -1,20 +1,48 @@
-import React from 'react'
+import React, {useState,useContext,}from 'react'
+import { useHistory } from "react-router-dom";
+import firebase from "@firebase/app"
 import Button from '../../Custom/Button/Button'
 import "./Login.scss"
+import {Context} from "../../Context"
+import {signInWithGoogle} from "../../Firebase/Firebase.utils"
+import {auth} from 'firebase'
 
 export default function Login() {
+    const {user} = useContext(Context)
+    const history = useHistory();
+    // console.log(value)
+
+    const [email ,setEmail] = useState('')
+    const [password ,setPassword] = useState('')
+
+    const handleEmail = (e)=>{
+        setEmail(e.target.value)
+    }
+    const handlePassword = (e)=>{
+        setPassword(e.target.value)
+    }
+    const handleSubmit =async (e)=>{
+        e.preventDefault()
+        await auth().signInWithEmailAndPassword(email, password);
+        if(user.get){
+            history.push("/Dashboard"); 
+        }
+    }
+    
     return (
         <div className="loginContainer">
            <div className="login">
             <h2>Login</h2>
-                <form>
+                <form onSubmit={handleSubmit}>
                 <div>
-                <input type='email' placeholder="Enter your Email"/></div>
+                <input type='email' placeholder="Enter your Email" onChange={handleEmail}/></div>
                 <div>
-                <input type='password' placeholder="Password"/></div>
-                <Button type="Auth" content="Login(Submit)"/><br/>
-                <Button type="Auth" content="Login with Google "/><br/>
+                <input type='password' placeholder="Password" onChange={handlePassword}/></div>
+                <Button type="submit" content="Login(Submit)"/>
                 </form>
+                <br/>
+                <Button type="Auth" content="Login with Google " onClick={()=>{signInWithGoogle()}}/><br/>
+                
             </div> 
 
             <div className="Register">

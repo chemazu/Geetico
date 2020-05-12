@@ -7,11 +7,11 @@ export default function MailingList() {
         <div className="mailingList">
             <img src={Logo} alt="" className="Logo" />
             <div>
-                <label for="email">
+                <label>
                 <p>NEW TO GEETICO?</p>
                 <p>Subscribe to our newsletter to get updates on our latest offers!</p></label>
                 <form>
-                <input type="email" value="" name="email" placeholder="email address" required/>
+                <input type="email" name="email" placeholder="email address" required/>
                 <input type="submit" value="Subscribe" name="subscribe"/>
     </form>
 </div>

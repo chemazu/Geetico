@@ -1,16 +1,16 @@
 import React from 'react'
 import "./Button.scss"
 
-export default function Button({content ,type}) {
-    switch (type) {
+export default function Button({content ,type,onClick,Buttontype}) {
+    switch (Buttontype) {
         case "primary":
-            return(<button className=" btn first">{content}</button>)
+            return(<button type= {type} className=" btn first" onClick={onClick}>{content}</button>)
             
         case "Auth" :
-            return(<button >{content}</button>)
+            return(<button  type= {type} onClick={onClick}>{content}</button>)
     
         default:
-            return(<button>{content}</button>)
+            return(<button  type= {type} onClick={onClick}>{content}</button>)
     }
  
 }

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component , useState, useContext} from 'react'
 import Slider from "react-slick";
 import "./Home.scss"
 import "slick-carousel/slick/slick.css";
@@ -9,10 +9,15 @@ import pepsi from "../../Custom/Images/2.png"
 import PromotionCard from '../../Custom/PromotionCard/PromotionCard'
 import AdvertBanner from '../../Custom/AdvertBanner/AdvertBanner'
 import MailingList from '../../Custom/MailingList/MailingList'
+import {Context} from "../../Context.jsx"
 
 export class Home extends Component {
+    static contextType = Context
     
     render() {
+        const value = this.context
+    console.log(value)
+        // const value = useContext(Context)
         const settings = {
             dots: true,
             infinite: true,
@@ -20,10 +25,11 @@ export class Home extends Component {
             slidesToShow: 8,
             slidesToScroll: 1
           };
+        
         return (
             <div>
                 <div className="promotions">
-                <p>Welcome to Geetico some lorem ipsum generic text</p>
+        <p>Welcome to Geetico some lorem ipsum generic text</p>
                 </div>
                 <div className="headerSlider">
                     <div className="categories">

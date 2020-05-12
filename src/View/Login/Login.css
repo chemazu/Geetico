@@ -1,1 +1,25 @@
-/* No CSS *//*# sourceMappingURL=Login.css.map */
+.loginContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.login form div {
+  padding: 15px;
+}
+
+.login form div input {
+  display: block;
+  width: 85%;
+  border: none;
+  border-bottom: solid 1px;
+  padding: 1em;
+  font-size: 1em;
+  margin: 35px 0 0;
+  outline: none;
+  -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background-color: transparent;
+}
+/*# sourceMappingURL=Login.css.map */
