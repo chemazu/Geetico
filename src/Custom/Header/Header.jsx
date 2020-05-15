@@ -1,6 +1,8 @@
 import React,{useContext} from 'react'
+import {BrowserRouter as Router, Link, Switch,useHistory} from "react-router-dom"
 import "./Header.scss"
 import Button from '../Button/Button'
+import ShoppingCart from "../ShoppingCart/ShoppingCart"
 import { auth } from 'firebase';
 import {Context} from "../../Context"
 
@@ -13,8 +15,14 @@ export default function Header() {
 
         }
     }
+    // let history = useHistory();
+
+  
+    console.log(useHistory)
     return (
         <div>
+            <Router>
+                <Switch>
             <nav className="navbar">
                 <label className="navbar-toggle" id="js-navbar-toggle">
                     <i className="fa fa-bars"></i>
@@ -24,25 +32,30 @@ export default function Header() {
                     <li>
                         <a href="/" className="nav-links">Home</a>
                     </li>
-                    <li>
-                        <a href="/#" className="nav-links">Products</a>
-                    </li>
+                    {/* <li onClick={()=>history.push("/Shop")}>
+                        Shop
+                    </li> */}
                     <li>
                         <a href="/#" className="nav-links">Search</a>
                     </li>
                     <li>
                         <a href="/#" className="nav-links">Cart</a>
+                        <ShoppingCart/>
                     </li>
                     <span>&nbsp;</span>
-                    <li>
+                    {/* <li>
                         {user.get?
                         <Button Buttontype="primary" content="SignOut" onClick ={handleSignOut}/>
                         :
-                        <a href="/Login" className="nav-links"><Button Buttontype="primary" content="Login/Register" /></a>
+                        <Button Buttontype="primary" content="Login/Register" onClick={()=>history.push("/Login")}/>
                     }
-                    </li>
+                    </li> */}
+                    <Link to= "/Login">Click me to Login</Link>
+            
                 </ul>
             </nav>
+            </Switch>
+            </Router>
         </div>
     )
 }

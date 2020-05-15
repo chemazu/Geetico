@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import {Context} from "../../Context"
-import {storage, firestore} from '../../Firebase/Firebase.utils'
+import {firestore} from '../../Firebase/Firebase.utils'
+import Card from "../../Custom/Card/Card"
+import Header from '../../Custom/Header/Header'
 
 export class Shop extends Component {
     constructor(){
@@ -10,16 +12,19 @@ export class Shop extends Component {
         }
     }
     componentDidMount(){
-        const productsref = firestore.doc("products/ProductItems")
+        const productsref = firestore.doc("products/TopSellers")
         const productSnapshot = productsref.get()
-        productSnapshot.then(snapshot=>{this.setState({product:snapshot.data().ProductItems},()=>{console.log(this.state.product)})})
+        productSnapshot.then(snapshot=>{this.setState({product:snapshot.data().ProductItems})})
     }
     static contextType = Context
     render() {
         const {product} = this.state
+        console.log(product)
         return (
             <div>
-              {product.map(({Name})=>{return(<p key={Name}>{Name}</p>)})} 
+                {/* <Header/> */}
+              {product.map((item)=>{return(<Card key = {item.Name} item = {item}/>)})} 
+              
             </div>
         )
     }

@@ -1,4 +1,4 @@
-import React, { Component, useContext } from 'react'
+import React, { Component} from 'react'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import {auth, createUserProfile}  from "./Firebase/Firebase.utils"
 import {Context} from "./Context.jsx"
@@ -18,11 +18,9 @@ export default class App extends Component {
   unsubscribeFromAuth = null;
   componentDidMount(){
     const{user} = this.context
-
     this.unsubscribeFromAuth=auth.onAuthStateChanged (async userAuth => {
       createUserProfile(userAuth)
       if(userAuth){
-        
         if(!userAuth.emailVerified){userAuth.sendEmailVerification();}
         user.set(userAuth)
       } 
@@ -34,11 +32,11 @@ export default class App extends Component {
     return (
         <div className="App">
           <Header/>
-          <Router basename="/">
+          <Router>
             <Switch>
               <Route exact path ="/" component={Home}></Route>
               <Route exact path="/Chemazu" component={Chemazu}></Route>
-              <Route exact path ="/Login" component={Login}></Route>
+              <Route exact path ="/login" component={Login}></Route>
               <Route exact path="/Dashboard" component={Dashboard}></Route> 
               <Route exact path ="/Register" component={Register}></Route>
               <Route  exact path ="/Categories" component={Categories}></Route>

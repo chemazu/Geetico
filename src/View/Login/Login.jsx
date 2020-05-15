@@ -6,6 +6,7 @@ import "./Login.scss"
 import {Context} from "../../Context"
 import {signInWithGoogle} from "../../Firebase/Firebase.utils"
 import {auth} from 'firebase'
+import Header from '../../Custom/Header/Header';
 
 export default function Login() {
     const {user} = useContext(Context)
@@ -30,7 +31,10 @@ export default function Login() {
     }
     
     return (
+        <div>
+            {/* <Header/> */}
         <div className="loginContainer">
+            
            <div className="login">
             <h2>Login</h2>
                 <form onSubmit={handleSubmit}>
@@ -53,6 +57,7 @@ export default function Login() {
             <a href="/Register"><Button type={2} content="Register"/></a>
             <Button type={2} content="Register with Google "/>
             </div>
+        </div>
         </div>
     )
 }

@@ -50,7 +50,7 @@ const firebaseConfig = {
 
 
   export const createProduct= async(ProductItems) =>{
-    const userRef = firestore.doc(`products/ProductItems`) //this creates a firebase doc that can be searched
+    const userRef = firestore.doc(`products/TopSellers`) //this creates a firebase doc that can be searched
     // const snapShot = await userRef.get() //.get() checks for userRef will await waits
         try{
           await userRef.set({
