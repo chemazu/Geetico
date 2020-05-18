@@ -35,9 +35,7 @@ export class Register extends Component {
         catch(err){
             console.log('the error in profile doc creation is',err)
         }
-
     }
-
     render() {
         const { displayName, email, password, confirmPassword } = this.state;
         return (

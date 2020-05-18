@@ -2,10 +2,12 @@ import React from 'react'
 import "./MailingList.scss"
 import Logo from "../Images/Logo.png"
 
+
 export default function MailingList() {
     return (
         <div className="mailingList">
             <img src={Logo} alt="" className="Logo" />
+
             <div>
                 <label>
                 <p>NEW TO GEETICO?</p>

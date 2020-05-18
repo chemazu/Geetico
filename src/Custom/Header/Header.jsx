@@ -1,61 +1,53 @@
-import React,{useContext} from 'react'
-import {BrowserRouter as Router, Link, Switch,useHistory} from "react-router-dom"
+import React,{useContext,useState} from 'react'
+import {useHistory,Link} from "react-router-dom"
+import { auth } from 'firebase';
+import {Context} from "../../Context"
 import "./Header.scss"
 import Button from '../Button/Button'
 import ShoppingCart from "../ShoppingCart/ShoppingCart"
-import { auth } from 'firebase';
-import {Context} from "../../Context"
+import Logo from '../Logo/Logo';
+import Search from '../Search/Search';
 
-export default function Header() {
+
+export default function Header({handleToggle, toggle,Cart}) {
     const {user} = useContext(Context)
+    let history = useHistory();
+    
     const handleSignOut=async ()=>{
         auth().signOut();
         user.set("")
         if (!user.get){
-
+            history.push("/")
         }
     }
-    // let history = useHistory();
-
-  
-    console.log(useHistory)
+    console.log(handleToggle)
     return (
         <div>
-            <Router>
-                <Switch>
             <nav className="navbar">
-                <label className="navbar-toggle" id="js-navbar-toggle">
-                    <i className="fa fa-bars"></i>
-                </label>
-                <a href="/#" className="logo">Geetico</a>
+                <Link to ="/#" className="logo"><Logo/></Link>
                 <ul className="main-nav" id="js-menu">
-                    <li>
-                        <a href="/" className="nav-links">Home</a>
-                    </li>
-                    {/* <li onClick={()=>history.push("/Shop")}>
-                        Shop
-                    </li> */}
-                    <li>
-                        <a href="/#" className="nav-links">Search</a>
-                    </li>
-                    <li>
-                        <a href="/#" className="nav-links">Cart</a>
-                        <ShoppingCart/>
-                    </li>
-                    <span>&nbsp;</span>
                     {/* <li>
+                        <Search/>
+                    </li> */}
+                    <li style={{"paddingTop":"10px"}}>
+                        {/* <Link to ="/#"  className="nav-links">View Cart</Link> */}
+                        {/* <p className="nav-links">View Cart</p> */}
+                        {Cart}
+                    </li>
+                    <li><span>&nbsp;</span></li>
+                    <li>
+                        {toggle? null:<ShoppingCart/>}
+                    </li>
+                    <li><span>&nbsp;</span></li>
+                    <li>
                         {user.get?
                         <Button Buttontype="primary" content="SignOut" onClick ={handleSignOut}/>
                         :
                         <Button Buttontype="primary" content="Login/Register" onClick={()=>history.push("/Login")}/>
                     }
-                    </li> */}
-                    <Link to= "/Login">Click me to Login</Link>
-            
+                    </li>
                 </ul>
             </nav>
-            </Switch>
-            </Router>
         </div>
     )
 }

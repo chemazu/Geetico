@@ -5,9 +5,11 @@ import { Context } from '../../Context'
 import Button from '../Button/Button'
 
 
-export default function ShoppingCart() {
+export default function ShoppingCart({toggleCart}) {
   const {cart}=useContext(Context)
   const cartChecker=cart.get.length
+  
+  
     return (
         <div className='cart-dropdown'>
           <div className='cart-items'>
@@ -19,3 +21,4 @@ export default function ShoppingCart() {
       </div>
     )
 }
+

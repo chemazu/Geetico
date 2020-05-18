@@ -1,94 +1,39 @@
 $h1:45px;
-.headerSlider{
-    display: grid;
-    grid-template-columns: 2fr 5fr ;
-    height: 400px;
-    
-}
-li{
-    list-style: none;
-}
 .promotions{
     background-color: grey;
-    padding: 20px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
 }
 .categories{
-    line-height: 25px;
-   
 
-    ul{
-        text-align: left;
-        li{
-            background-color: darkgray;
-            border-top : 1px solid black;
-            padding: 2px;
-        a{
-            color: #212121;
-            padding: 10px 0px 10px 40px;
-            border-bottom: 1px dotted #CDCDCD;
-        }
-    }}
-}
-.overlay{
-    background-color: black;
-    z-index: 9
-}
-.slider{
-    background-color: crimson;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../../Custom/Images/1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-width: 100%;
-    min-height: 100%;
-    text-align: left;
-    padding: 75px;
-    color:#fff;
-    line-height: 40px;
-    h1{
-        font-size: $h1;
-        line-height: 1;
-        font-weight: 700;
-        margin: 0 0 0.25em 0;
-    }
-    .buttonDiv{
-        padding-top: 30px;
-    }
+    padding: 20px;
     
-}
-.topProducts{
-    padding: 0 60px;
-    border-radius:20px ;
-    overflow: hidden;
-    h1{
-        color: green;
-        padding: 20px;
-        text-align: left;
-    }
-    .productBar{
-        background-color: #d8cdcd;
-        display: flex;
-        padding: 30px;
-        justify-content: space-around;
-        margin:15px
-    }
-}
-
-.categorySlider{
-    background-color: #282828;
-    padding: 60px;
-    margin: 20px;
-    .sliderProductContainer{
-        .sliderProduct{
-            background-color: ivory;
-            width:50px;
-            border : 2px solid   ;
-            margin-left:20px;
+    div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 10px;
+        text-align: center;
+        padding :5px;
+        h4{
+            background-color: greenyellow;
         }
     }
-
+}
+.sliderContainer{
+    padding: 20px 40px;
+    background-color: rgb(228, 228, 228);
+    width: 90%;
+    margin: auto;
+    h2{
+        padding: 15px;
+    }
 }
 .advertSection{
     padding: 10px;
     background-color: red;
+}
+.hspacer{
+    height:50px;
 }

@@ -1,4 +1,5 @@
 import React, { Component} from 'react'
+import {Link} from "react-router-dom"
 import Slider from "react-slick";
 import "./Home.scss"
 import "slick-carousel/slick/slick.css";
@@ -6,80 +7,92 @@ import "slick-carousel/slick/slick-theme.css";
 import Button from '../../Custom/Button/Button'
 import pepsi from "../../Custom/Images/2.png"
 import AdvertBanner from '../../Custom/AdvertBanner/AdvertBanner'
-import {Context} from "../../Context.jsx"
-import Header from '../../Custom/Header/Header';
+import Hero from './Hero';
+import PublicItem from '../../Custom/PublicItem/PublicItem';
 
 export class Home extends Component {
-    static contextType = Context
-    
     render() {
-        const value = this.context
-    console.log(value)
-        // const value = useContext(Context)
         const settings = {
-            dots: true,
+            dots: false,
             infinite: true,
             speed: 500,
-            slidesToShow: 8,
+            slidesToShow: 7,
             slidesToScroll: 1
           };
         
         return (
             <div>
-                {/* <Header/> */}
-                <div className="promotions">
-        <p>Welcome to Geetico some lorem ipsum generic text</p>
-                </div>
-                <div className="headerSlider">
+                <div>
+                    <div className="promotions">
+                        <p>Welcome to Geetico some lorem ipsum generic text</p>
+                    </div>
+                    <Hero/>
                     <div className="categories">
-                        <ul>
-                            <li><a href="/">Top Sellers</a></li>
-                            <li><a href="/">New Arrivals</a></li>
-                            <li><a href="/">Baking Ingredients</a></li>
-                            <li><a href="/">Cake Decoration</a></li>
-                            <li><a href="/">Frosting & Design</a></li>
-                            <li><a href="/">Equipment & Tools</a></li>
-                            <li><a href="/">Cooking</a></li>
-                            <li><a href="/">Appliances</a></li>
-                        </ul>
+                        <div>
+                            <Link to ="/Shop"><h4>Top Sellers</h4></Link>
+                            <Link to ="/Shop"><h4>New Arrivals</h4></Link>
+                            <Link to ="/Shop"><h4>Essentials</h4></Link>
+                            <Link to ="/Shop"><h4>Home</h4></Link>
+                        </div>
+                        <div>
+                            <Link to ="/Shop"><h4>Office</h4></Link>
+                            <Link to ="/Shop"><h4>Ingredients</h4></Link>
+                            <Link to ="/Shop"><h4>Everyday Lifestyle</h4></Link>
+                            <Link to ="/Shop"><h4>Tools & Equipments</h4></Link>
+                        </div>
+                        <div>
+                            <Link to ="/Shop"><h4>Designed </h4></Link> 
+                            <Link to ="/Shop"><h4>Crafted</h4></Link>
+                            <Link to ="/Shop"><h4>Fashion </h4></Link> 
+                            <Link to ="/Shop"><h4>Wellness</h4></Link>
+                        </div>
                     </div>
-                    <div className="slider">
-                    <h1 className="slider_title">Heading Spaced with padding</h1>
-                    <h2 className="slider_subtitle">Some sort of lovely supporting text</h2>
-                    <div className="buttonDiv"><Button content="Shop Now"/></div>y
+                </div>
+                <div>
+                    <div className="sliderContainer">
+                        <h2> Top Sellers</h2>
+                            <Slider {...settings} >
+                            <PublicItem image={pepsi} price={200} item="Pepsi"/>
+                            <div className="spacer"></div>
+                            <PublicItem image={pepsi} price={200} item="Pepsi"/>
+                            <div className="spacer"></div>
+                            <PublicItem image={pepsi} price={200} item="Pepsi"/>
+                            <div className="spacer"></div>
+                            <PublicItem image={pepsi} price={200} item="Pepsi"/>
+                            <div className="spacer"></div>
+                            <PublicItem image={pepsi} price={200} item="Pepsi"/>
+                            <div className="spacer"></div>
+                            <PublicItem image={pepsi} price={200} item="Pepsi"/>
+                            <div className="spacer"></div>
+                            <PublicItem image={pepsi} price={200} item="Pepsi"/>
+                            <div className="spacer"></div>
+                        </Slider>
                     </div>
+                    <div className="hspacer"></div>
+                    <div clasName="sliderWrapper"></div>
+                    <div className="sliderContainer">
+                        <h2> New Arrivals</h2>
+                            <Slider {...settings} >
+                            <PublicItem image={pepsi} price={200} item="Pepsi"/>
+                            <div className="spacer"></div>
+                            <PublicItem image={pepsi} price={200} item="Pepsi"/>
+                            <div className="spacer"></div>
+                            <PublicItem image={pepsi} price={200} item="Pepsi"/>
+                            <div className="spacer"></div>
+                            <PublicItem image={pepsi} price={200} item="Pepsi"/>
+                            <div className="spacer"></div>
+                            <PublicItem image={pepsi} price={200} item="Pepsi"/>
+                            <div className="spacer"></div>
+                            <PublicItem image={pepsi} price={200} item="Pepsi"/>
+                            <div className="spacer"></div>
+                            <PublicItem image={pepsi} price={200} item="Pepsi"/>
+                            <div className="spacer"></div>
+                        </Slider>
                     </div>
-                <div className="topProducts">
-                <h1>Top Sellers</h1>
-                <div className="productBar">
-                    
                 </div>
-                </div>
-                <div className="categorySliderContainer">
-                <h1>TEXT</h1>
-                <div className="categorySlider">
-                <Slider {...settings} className="sliderProductContainer">
-                <div className="sliderProduct"><img src={pepsi} alt =''/> <p>Pepsi</p><p>N200</p></div>
-                <div className="spacer"></div>
-                <div className="sliderProduct"><img src={pepsi} alt =''/><p>Pepsi</p><p>N200</p></div>
-                <div className="spacer"></div>
-                <div className="sliderProduct"><img src={pepsi} alt =''/><p>Pepsi</p><p>N200</p></div>
-                <div className="spacer"></div>
-                <div className="sliderProduct"><img src={pepsi} alt =''/><p>Pepsi</p><p>N200</p></div>
-                <div className="spacer"></div>
-                <div className="sliderProduct"><img src={pepsi} alt =''/><p>Pepsi</p><p>N200</p></div>
-                <div className="spacer"></div>
-                <div className="sliderProduct"><img src={pepsi} alt =''/><p>Pepsi</p><p>N200</p></div>
-                <div className="spacer"></div>
-                </Slider>
-                </div>
-                </div>
-                <div className="advertSection">
-                    <AdvertBanner/>
-                </div>
+                <AdvertBanner/>
             </div>
         )
     }
 }
-
 export default Home

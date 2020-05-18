@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import {Context} from "../../Context"
 import {firestore} from '../../Firebase/Firebase.utils'
 import Card from "../../Custom/Card/Card"
-import Header from '../../Custom/Header/Header'
 
 export class Shop extends Component {
     constructor(){
@@ -19,10 +18,9 @@ export class Shop extends Component {
     static contextType = Context
     render() {
         const {product} = this.state
-        console.log(product)
+        console.log(this.props)
         return (
             <div>
-                {/* <Header/> */}
               {product.map((item)=>{return(<Card key = {item.Name} item = {item}/>)})} 
               
             </div>

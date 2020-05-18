@@ -1,0 +1,17 @@
+.search{
+    display: flex;
+    form{
+        input{
+            width: 300px;
+            padding: 5px;
+            height: 40px;
+            outline: none;
+            color: #9DBFAF;
+        }
+        button{
+            height: 40px;
+            padding: 3px;
+
+        }
+    }
+}

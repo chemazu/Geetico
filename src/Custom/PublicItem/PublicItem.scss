@@ -1,0 +1,13 @@
+.publicItem{
+    text-align: center;
+    width: 150px;
+    padding: 5px;
+    border: 2px solid black;
+    .item-details{
+        padding: 1px;
+        p{
+            background-color: green;
+            padding: 5px;
+        }
+    }
+}
