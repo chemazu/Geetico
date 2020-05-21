@@ -9,7 +9,7 @@ import Logo from '../Logo/Logo';
 import Search from '../Search/Search';
 
 
-export default function Header({handleToggle, toggle,Cart}) {
+export default function Header({toggle,Cart}) {
     const {user} = useContext(Context)
     let history = useHistory();
     
@@ -20,7 +20,6 @@ export default function Header({handleToggle, toggle,Cart}) {
             history.push("/")
         }
     }
-    console.log(handleToggle)
     return (
         <div>
             <nav className="navbar">
@@ -29,9 +28,7 @@ export default function Header({handleToggle, toggle,Cart}) {
                     {/* <li>
                         <Search/>
                     </li> */}
-                    <li style={{"paddingTop":"10px"}}>
-                        {/* <Link to ="/#"  className="nav-links">View Cart</Link> */}
-                        {/* <p className="nav-links">View Cart</p> */}
+                    <li  className = ".nav-links"style={{"paddingTop":"10px"}}>
                         {Cart}
                     </li>
                     <li><span>&nbsp;</span></li>

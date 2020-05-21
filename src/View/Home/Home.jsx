@@ -1,25 +1,13 @@
 import React, { Component} from 'react'
 import {Link} from "react-router-dom"
-import Slider from "react-slick";
 import "./Home.scss"
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Button from '../../Custom/Button/Button'
 import pepsi from "../../Custom/Images/2.png"
 import AdvertBanner from '../../Custom/AdvertBanner/AdvertBanner'
 import Hero from './Hero';
-import PublicItem from '../../Custom/PublicItem/PublicItem';
+import CategorySlider from '../CategorySlider/CategorySlider';
 
 export class Home extends Component {
     render() {
-        const settings = {
-            dots: false,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 7,
-            slidesToScroll: 1
-          };
-        
         return (
             <div>
                 <div>
@@ -49,46 +37,10 @@ export class Home extends Component {
                     </div>
                 </div>
                 <div>
-                    <div className="sliderContainer">
-                        <h2> Top Sellers</h2>
-                            <Slider {...settings} >
-                            <PublicItem image={pepsi} price={200} item="Pepsi"/>
-                            <div className="spacer"></div>
-                            <PublicItem image={pepsi} price={200} item="Pepsi"/>
-                            <div className="spacer"></div>
-                            <PublicItem image={pepsi} price={200} item="Pepsi"/>
-                            <div className="spacer"></div>
-                            <PublicItem image={pepsi} price={200} item="Pepsi"/>
-                            <div className="spacer"></div>
-                            <PublicItem image={pepsi} price={200} item="Pepsi"/>
-                            <div className="spacer"></div>
-                            <PublicItem image={pepsi} price={200} item="Pepsi"/>
-                            <div className="spacer"></div>
-                            <PublicItem image={pepsi} price={200} item="Pepsi"/>
-                            <div className="spacer"></div>
-                        </Slider>
-                    </div>
-                    <div className="hspacer"></div>
-                    <div clasName="sliderWrapper"></div>
-                    <div className="sliderContainer">
-                        <h2> New Arrivals</h2>
-                            <Slider {...settings} >
-                            <PublicItem image={pepsi} price={200} item="Pepsi"/>
-                            <div className="spacer"></div>
-                            <PublicItem image={pepsi} price={200} item="Pepsi"/>
-                            <div className="spacer"></div>
-                            <PublicItem image={pepsi} price={200} item="Pepsi"/>
-                            <div className="spacer"></div>
-                            <PublicItem image={pepsi} price={200} item="Pepsi"/>
-                            <div className="spacer"></div>
-                            <PublicItem image={pepsi} price={200} item="Pepsi"/>
-                            <div className="spacer"></div>
-                            <PublicItem image={pepsi} price={200} item="Pepsi"/>
-                            <div className="spacer"></div>
-                            <PublicItem image={pepsi} price={200} item="Pepsi"/>
-                            <div className="spacer"></div>
-                        </Slider>
-                    </div>
+                    <CategorySlider pepsi={pepsi} category ="Top Sellers"/>
+                    <CategorySlider pepsi={pepsi} category ="New Arrivals"/>
+                    <CategorySlider pepsi={pepsi} category ="Office"/>
+                    <CategorySlider pepsi={pepsi} category ="Fashion"/>
                 </div>
                 <AdvertBanner/>
             </div>

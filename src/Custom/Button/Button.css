@@ -5,12 +5,7 @@
      -moz-appearance: none;
           appearance: none;
   background-color: transparent;
-  border: 2px solid #e74c3c;
-  border-radius: 0.6em;
-  color: #e74c3c;
-  margin: -10px 0 0 0;
-  padding: 10px 25px 10px 25px;
-  cursor: pointer;
+  padding: 10px 25px;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1;
@@ -21,20 +16,39 @@
   font-weight: 700;
 }
 
-.btn:hover, .btn:focus {
+.primary {
+  color: green;
+  border: 2px solid green;
+  border-radius: 0.6em;
+}
+
+.primary:hover, .primary :focus {
+  -webkit-box-shadow: 0 0 40px 40px green inset;
+          box-shadow: 0 0 40px 40px green inset;
   color: #fff;
-  outline: 0;
 }
 
-.first {
-  -webkit-transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
-  transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
-  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+.auth {
+  color: orange;
+  border: 2px solid orange;
+  width: 100%;
 }
 
-.first:hover {
-  -webkit-box-shadow: 0 0 40px 40px #e74c3c inset;
-          box-shadow: 0 0 40px 40px #e74c3c inset;
+.auth:hover, .auth :focus {
+  -webkit-box-shadow: 0 0 40px 40px orange inset;
+          box-shadow: 0 0 40px 40px orange inset;
+  color: #fff;
+}
+
+.action {
+  color: blue;
+  border: 2px solid blue;
+  border-radius: 0.6em;
+}
+
+.action:hover, .action :focus {
+  -webkit-box-shadow: 0 0 40px 40px blue inset;
+          box-shadow: 0 0 40px 40px blue inset;
+  color: #fff;
 }
 /*# sourceMappingURL=Button.css.map */

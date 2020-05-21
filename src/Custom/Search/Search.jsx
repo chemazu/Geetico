@@ -17,7 +17,6 @@ export class Search extends Component {
         e.preventDefault()
         this.setState({submit:this.state.search})
         this.setState({search:""})
-        console.log(this.state)
     }
     render() {
         const {search} = this.state

@@ -25,6 +25,10 @@ body {
   display: none;
 }
 
+.nav-links:hover {
+  cursor: pointer;
+}
+
 .nav-links,
 .logo {
   text-decoration: none;
@@ -33,7 +37,7 @@ body {
 
 .main-nav li {
   text-align: center;
-
+  margin: 15px auto;
 }
 
 .logo {

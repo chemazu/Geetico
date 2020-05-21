@@ -26,6 +26,8 @@ export default function Hero() {
               <img src={slide1} alt = "slider"/>
               <img src={slide2} alt = "slider"/>
               <img src={slide3} alt = "slider"/>
+              <img src={slide2} alt = "slider"/>
+              <img src={slide3} alt = "slider"/> 
             </Slider>
             </div>
         </div>

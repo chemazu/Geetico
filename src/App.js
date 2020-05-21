@@ -12,6 +12,7 @@ import Register from './View/Register/Register';
 import Categories from './View/Categories/Categories';
 import Shop from './View/Shop/Shop';
 import DisplayCard from './View/DisplayCard/DisplayCard';
+import Checkout from './View/Checkout/Checkout';
 
 export default class App extends Component {
   static contextType = Context
@@ -34,7 +35,6 @@ export default class App extends Component {
 }
   handletoggle = () =>{
   this.setState({toggle:!this.state.toggle})
-  console.log(this.state.toggle)
 } 
   render() {
     
@@ -50,6 +50,7 @@ export default class App extends Component {
               <Route exact path ="/Register" component={Register}></Route>
               <Route  exact path ="/Categories" component={Categories}></Route>
               <Route exact path ="/Shop" component={Shop}></Route>
+              <Route exact path ="/Checkout" component={Checkout}></Route>
               <Route exact path ="/display" component={DisplayCard}></Route>
             </Switch>
           <Footer/>

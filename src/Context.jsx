@@ -6,12 +6,12 @@ export function StateProvider(props) {
     const [user,setUser] = useState("")
     const [products,setProducts] = useState("")
     const [cart, setCart] = useState([])
-    const [drop,setDrop] = useState("cool")
+    const [total,setTotal] = useState("")
     const store ={
         user:{ get: user, set: setUser},
         products:{ get: products, set: setProducts},
         cart:{get:cart, set:setCart},
-        drop:{get:drop, set:setDrop}
+        total:{get:total, set:setTotal}
 
 
     }

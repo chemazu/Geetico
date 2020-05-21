@@ -1,0 +1,20 @@
+.logoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.logoContainer img {
+  height: 5%;
+  width: 5%;
+}
+
+.logoContainer span {
+  font-size: 20px;
+  padding-left: 10px;
+}
+/*# sourceMappingURL=Logo.css.map */

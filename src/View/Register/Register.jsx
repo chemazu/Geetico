@@ -1,6 +1,8 @@
 
 import React, { Component } from 'react'
+import "./Register.scss"
 import { auth , createUserProfile , storage} from "../../Firebase/Firebase.utils"
+import Button from '../../Custom/Button/Button'
 
 export class Register extends Component {
 
@@ -30,6 +32,7 @@ export class Register extends Component {
         }
         try {
             const {user} = await auth.createUserWithEmailAndPassword(email ,password)
+            user.updateProfile({displayName:displayName}) 
             console.log(user)
         }
         catch(err){
@@ -39,34 +42,36 @@ export class Register extends Component {
     render() {
         const { displayName, email, password, confirmPassword } = this.state;
         return (
-            <div>
+            <div className="signUpWrapper">
+            <div className ="signUp">
               <form onSubmit={this.handleSubmit}>
                   <input type="text"
                   name='displayName'
+                  placeholder="Name"
                   value= {displayName}
                   onChange ={this.handleChange}
                   />
                   <input type="email"
+                  placeholder="Email"
                   name='email'
                   value= {email}
                   onChange ={this.handleChange}
                   />
                   <input type="password"
+                  placeholder="Password"
                   name='password'
                   value= {password}
                   onChange ={this.handleChange}
                   />
                   <input type="password"
                   name='confirmPassword'
+                  placeholder="Confirm Password"
                   value= {confirmPassword}
                   onChange ={this.handleChange}
                   />
-                  <input type='file'
-                  name='image'
-                  onChange ={this.handleUpload}
-                  />
-                  <button type='submit'>Sign Up</button>
+                  <Button Buttontype="auth" type="submit" content="Sign Up"/>
               </form> 
+              </div>
             </div>
         )
     }

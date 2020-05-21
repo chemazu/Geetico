@@ -1,0 +1,19 @@
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search form input {
+  width: 300px;
+  padding: 5px;
+  height: 40px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.search form button {
+  height: 40px;
+  padding: 3px;
+}
+/*# sourceMappingURL=Search.css.map */

@@ -1,0 +1,16 @@
+.publicItem {
+  text-align: center;
+  width: 150px;
+  padding: 5px;
+  border: 2px solid black;
+}
+
+.publicItem .item-details {
+  padding: 1px;
+}
+
+.publicItem .item-details p {
+  background-color: green;
+  padding: 5px;
+}
+/*# sourceMappingURL=PublicItem.css.map */

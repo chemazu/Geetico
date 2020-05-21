@@ -8,7 +8,6 @@ export default function Categories() {
     const {products} = useContext(Context)
     const handleProduct = ()=>{
         products.set(TopSellers)
-        console.log(products.get)
     }
     const uploadProduct = ()=>{
         createProduct(products.get)
