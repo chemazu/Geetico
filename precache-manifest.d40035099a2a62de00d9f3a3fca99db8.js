@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "788e9d7d56c19e3436be16a1727db834",
+    "revision": "c4354b6ddf18bdc9c0a88fe6f98ad64d",
     "url": "/Geetico/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Geetico/static/css/2.930d8355.chunk.css"
   },
   {
-    "revision": "c6e978cf9cfd25f787a6",
+    "revision": "b5e32c336bfe09145c6b",
     "url": "/Geetico/static/css/main.9d1d82d9.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Geetico/static/js/2.9ff088ec.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c6e978cf9cfd25f787a6",
-    "url": "/Geetico/static/js/main.9aeb0fb0.chunk.js"
+    "revision": "b5e32c336bfe09145c6b",
+    "url": "/Geetico/static/js/main.a4d6adb5.chunk.js"
   },
   {
     "revision": "b55eeefcbd9c160fb98e",
