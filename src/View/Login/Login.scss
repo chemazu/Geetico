@@ -1,53 +1,52 @@
-// .vl {
-//     border-left: 6px solid green;
-//     height: 500px;
-//   }
-  .loginContainer{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      padding: 2em;
-  }
-  .login{
-      padding: 20px;
-      h2{
-        padding-bottom: 10px;
-        text-align: center;
-      }
-        form{
-            div{
-                padding: 15px;
-                input{
-                    display: block;
-                    width: 100%;
-                    border: none;
-                    padding: 0.5em;
-                    border-bottom: solid 1px;
-                    font-size: 1em;
-                    margin: 35px 0 0;
-                    outline: none;
-                    -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
-                    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
-                    background-color: transparent;
-                  }
-            }   
+
+.loginContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.login{
+    // padding: 20px 200px;
+    .second,.third{
+        width: 100%;
+        padding:2% 10%;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    .third{
+        button{ margin-bottom: 6px;}
+        .loginAuth{
+            display: flex;
+            .loginAuthSpacer{
+                width: 50px;
+            }
         }
-  }
-  .register{
-      padding: 20px;
-      h2{
-          padding-bottom: 10px;
-          text-align: center;
-      }
-      p{
-          margin-top:50px ;
-          padding: 10px;
-          line-height: 1.5em;
-      }
-      div{
-          margin-top:58px;
-          button{
-              margin-bottom: 20px;
-          }
-      }
-  }
-  
+    }
+}
+.login{
+    .second{
+        form{
+            input{
+                display: block;
+                width: 100%;
+                border: none;
+                padding: 0.5em;
+                border-bottom: solid 1px;
+                font-size: 1em;
+                margin: 35px 0 0;
+                outline: none;
+                -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+                transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+                background-color: transparent;
+            }
+        }
+    }
+}
+.login{
+    padding: 20px 200px;
+}
+@media (max-width:600px){
+    .login{
+        padding: 20px 0px;
+    }
+}

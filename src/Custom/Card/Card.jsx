@@ -5,19 +5,17 @@ import {Context} from "../../Context"
 
 export default function Card({item}) {
     const {Name, Price} = item
-    const {cart,total} = useContext(Context) 
-    const addtoCart = ()=>{
-        const existingCartItem = cart.get.find(content=> content.id === item.id )
-        console.log(cart.get)
+    const {total} = useContext(Context) 
+    const addToCart = ()=>{
+        const cart = JSON.parse(localStorage.getItem("cart"))
+        const existingCartItem = cart.find(content=> content.id === item.id )
         if(existingCartItem){
-                cart.get.map(content=> {if(content.id === item.id){ content.quantity++; cart.set(prev=>[...prev])}})
-                //cart.get.map((content) => {if(content.id === item.id){ cart.set(prev=>[...prev,content.quantity++])}})  
+            cart.map(content=> {if(content.id === item.id){ content.quantity++; total.set(prev=>[...prev])}})
         }
-        else{return cart.set(prevCart=>[...prevCart,{...item , quantity:1}])}
-        let sum = 0 
-        cart.get.map(({quantity,Price})=>{sum= sum + quantity*Price})
-        total.set(sum)
-        console.log(total)
+        else{cart.push({...item, quantity:1})}
+        console.log(cart)
+        localStorage.setItem("cart",JSON.stringify(cart))
+        console.log(localStorage)
     }
     return (
         <div>
@@ -27,7 +25,7 @@ export default function Card({item}) {
                     <h4>{Name}</h4>
                 <div>
                 <h3>N{Price}</h3>
-                <p><button onClick={addtoCart}>Add to Cart</button></p>
+                <p><button onClick={addToCart}>Add to Cart</button></p>
                 </div>
                 </div>
                 

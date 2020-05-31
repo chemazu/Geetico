@@ -17,4 +17,9 @@
   font-size: 20px;
   padding-left: 10px;
 }
+
+.logo-text:hover {
+  color: greenyellow;
+  cursor: pointer;
+}
 /*# sourceMappingURL=Logo.css.map */

@@ -13,7 +13,7 @@ export default function PublicItem({image,price,item}) {
                     <h4>{item}</h4>
                 <div>
                 <h3>{price}</h3>
-                <p>Buy</p>
+                <p className="dummyBuy">View</p>
                 </div>
                 </div>
                 

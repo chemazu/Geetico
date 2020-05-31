@@ -3,11 +3,38 @@
     align-items: center;
     padding: 10px;
     img{
-        height:5%;
-        width:5%;
+        height:7%;
+        width:7%;
     }
     span{
         font-size: 20px;
         padding-left: 10px;
+    }
+}
+.logo-text:hover{
+    color:greenyellow;
+    cursor: pointer;
+}
+.mobileLogo{
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    img{
+        height:90%;
+        width:90%;
+    }
+}
+
+@media (max-width:600px){
+    .logo-text{
+        display: none;
+    }
+    .logoContainer{
+        img{
+            height:50%;
+            width:50%;
+        }
     }
 }

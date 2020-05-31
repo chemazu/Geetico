@@ -1,25 +1,43 @@
 .loginContainer {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.register, .login {
+  padding: 1.5%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.register .second, .register .third, .login .second, .login .third {
+  width: 100%;
+  padding: 2% 10%;
+}
+
+.register .third button, .login .third button {
+  margin-bottom: 6px;
 }
 
 .login {
-  padding: 20px;
+  padding: 2.5%;
 }
 
-.login h2 {
-  padding-bottom: 10px;
-  text-align: center;
-}
-
-.login form div {
-  padding: 15px;
-}
-
-.login form div input {
+.login .second form input {
   display: block;
   width: 100%;
   border: none;
@@ -31,28 +49,5 @@
   -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
   transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
   background-color: transparent;
-}
-
-.register {
-  padding: 20px;
-}
-
-.register h2 {
-  padding-bottom: 10px;
-  text-align: center;
-}
-
-.register p {
-  margin-top: 50px;
-  padding: 10px;
-  line-height: 1.5em;
-}
-
-.register div {
-  margin-top: 58px;
-}
-
-.register div button {
-  margin-bottom: 20px;
 }
 /*# sourceMappingURL=Login.css.map */

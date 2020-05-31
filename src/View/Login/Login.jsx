@@ -27,38 +27,29 @@ export default function Login() {
             history.push("/Dashboard"); 
         }
     }
-    
     return (
         <div>
             {/* <Header/> */}
-        <div className="loginContainer">
-            
+        {/* <div className="loginContainer"> */}
            <div className="login">
-            <h2>Login</h2>
+           <div className="first"><h2>Login</h2></div>
+           <div className="second">
                 <form onSubmit={handleSubmit}>
-                <div>
-                <input type='email' placeholder="Enter your Email" onChange={handleEmail}/></div>
-                <div>
-                <input type='password' placeholder="Password" onChange={handlePassword}/></div>
-                <Button Buttontype="auth" type="submit" content="Login"/>
+                    <input type='email' placeholder="Enter your Email" onChange={handleEmail}/>
+                    <br/>
+                    <input type='password' placeholder="Password" onChange={handlePassword}/>
                 </form>
-                <br/>
+           </div>
+           <div className="third">
+                <div className="loginAuth">
+                <Button Buttontype="auth" type="submit" content="Login"/>
+                <div className="loginAuthSpacer"></div>
                 <Button Buttontype="auth" content="Login with Google " onClick={()=>{signInWithGoogle()}}/><br/>
-                
-                
-            </div> 
-
-            <div className="register">
-            <h2>Create your Geetico Account</h2>
-            <p>Create your Geetico customer account in just a few clicks! <br/>
-            You can register either using your e-mail address<br/> 
-            or through your Google account.</p>
-            <div>
-            <Button  Buttontype="auth" content="Register" onClick = {()=>history.push("/Register")}/>
-            <Button Buttontype="auth" content="Register with Google "/>
+                </div>
+                <Button  Buttontype="auth" content="Register" onClick = {()=>history.push("/Register")}/>
+           </div>    
             </div>
-            </div>
-        </div>
+        {/* </div> */}
         </div>
     )
 }

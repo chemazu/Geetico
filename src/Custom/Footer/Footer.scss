@@ -13,3 +13,9 @@
         }
     }
 }
+@media (max-width:600px){
+    .footerBar{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

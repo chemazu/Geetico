@@ -4,7 +4,6 @@
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-color: transparent;
   padding: 10px 25px;
   font-size: 1rem;
   font-weight: 400;
@@ -17,15 +16,16 @@
 }
 
 .primary {
-  color: green;
-  border: 2px solid green;
-  border-radius: 0.6em;
+  color: #20e920;
+  border: 2px solid #20e920;
+  width: 100%;
 }
 
 .primary:hover, .primary :focus {
-  -webkit-box-shadow: 0 0 40px 40px green inset;
-          box-shadow: 0 0 40px 40px green inset;
+  -webkit-box-shadow: 0 0 40px 40px blue inset;
+          box-shadow: 0 0 40px 40px blue inset;
   color: #fff;
+  border: 2px solid blue;
 }
 
 .auth {

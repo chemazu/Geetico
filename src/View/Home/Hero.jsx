@@ -20,8 +20,8 @@ export default function Hero() {
       };
 
     return (
-        <div>
-            <div className="heroWrapper">
+        <div className="heroWrapper">
+            <div >
             <Slider {...settings} >
               <img src={slide1} alt = "slider"/>
               <img src={slide2} alt = "slider"/>

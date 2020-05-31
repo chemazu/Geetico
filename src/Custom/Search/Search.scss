@@ -1,12 +1,14 @@
 .search{
     display: flex;
+    justify-content: center;
+    background:  #9DBFAF;
+    padding: 5px 10px;
     form{
         input{
             width: 300px;
             padding: 5px;
             height: 40px;
             outline: none;
-            color: #9DBFAF;
         }
         button{
             height: 40px;

@@ -15,4 +15,13 @@
 .footerBar div p, .footerBar div h2 {
   padding-bottom: 10px;
 }
+
+@media (max-width: 600px) {
+  .footerBar {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
 /*# sourceMappingURL=Footer.css.map */

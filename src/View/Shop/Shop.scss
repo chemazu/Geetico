@@ -4,3 +4,18 @@
     justify-content: space-evenly;
     padding: 30px;
 }
+.clearSearch{
+    text-align: center;
+    &:hover{
+        color: lightgreen;
+        cursor: pointer;
+    }
+}
+.categoryHeader{
+    background:  #9DBFAF;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}

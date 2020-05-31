@@ -13,4 +13,9 @@
   background-color: green;
   padding: 5px;
 }
+
+.publicItem .item-details p:hover {
+  cursor: pointer;
+  color: white;
+}
 /*# sourceMappingURL=PublicItem.css.map */

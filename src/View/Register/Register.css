@@ -1,1 +1,40 @@
-/* No CSS *//*# sourceMappingURL=Register.css.map */
+.signUpWrapper {
+  padding: 50px;
+}
+
+.signUpWrapper .signUp {
+  padding: 20px;
+  padding-top: 5px;
+  margin: auto;
+  width: 50%;
+  border: 2px;
+}
+
+.signUpWrapper .signUp form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.signUpWrapper .signUp form input {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 0.5em;
+  border-bottom: solid 1px;
+  font-size: 1em;
+  margin: 10% 0 0;
+  outline: none;
+  -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background-color: transparent;
+}
+
+.signUpWrapper .signUp form button {
+  margin-top: 5%;
+}
+/*# sourceMappingURL=Register.css.map */

@@ -1,53 +1,30 @@
-.promotions {
-  background-color: grey;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 40px;
-}
-
 .categories {
-  padding: 20px;
-}
-
-.categories div {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
-  text-align: center;
-  padding: 5px;
-}
-
-.categories div h4 {
-  background-color: greenyellow;
-}
-
-.sliderContainer {
-  padding: 20px 40px;
-  background-color: #e4e4e4;
-  width: 90%;
-  margin: auto;
-}
-
-.sliderContainer h2 {
-  padding: 15px;
-}
-
-.advertSection {
-  padding: 10px;
+  grid-column-gap: 2%;
+  grid-row-gap: 70%;
   background-color: red;
 }
 
-.hspacer {
-  height: 50px;
+.categories a {
+  background-color: royalblue;
+}
+
+.categories a::hover {
+  color: orange;
+}
+
+.categories a h4 {
+  font-size: .75em;
+  padding: .6em;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .categorySliderWrapper {
+    display: none;
+  }
 }
 /*# sourceMappingURL=Home.css.map */

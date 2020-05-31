@@ -1,4 +1,22 @@
-$h1:45px;
+.categories{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 25px;
+    padding: 10px 30px;
+    a{
+        background-color: #20e920;;
+        text-decoration: none;
+        h4{
+            padding: .6em;
+            text-align: center;
+            color: white;
+        }
+        h4:hover{
+                color: blue;
+        }
+    }
+}
 .promotions{
     background-color: grey;
     display: flex;
@@ -6,34 +24,27 @@ $h1:45px;
     justify-content: center;
     height: 40px;
 }
-.categories{
-
-    padding: 20px;
+.categorySliderWrapper{
+    padding: 10px 40px;
     
-    div{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        column-gap: 10px;
-        text-align: center;
-        padding :5px;
-        h4{
-            background-color: greenyellow;
-        }
-    }
-}
-.sliderContainer{
-    padding: 20px 40px;
-    background-color: rgb(228, 228, 228);
-    width: 90%;
-    margin: auto;
-    h2{
-        padding: 15px;
-    }
-}
-.advertSection{
-    padding: 10px;
-    background-color: red;
 }
 .hspacer{
-    height:50px;
+    height:25px;
+    background-color: white;
+}
+
+.showMobile{display: none;}
+@media (max-width:600px){
+    .showWeb{display: none;}
+    .showMobile{display:inline;}
+    .categorySliderWrapper{
+        padding: 10px;
+    }
+    .categories{
+        display: flex;
+        flex-direction: column;
+        a{
+            margin:5px;
+        }
+    }
 }

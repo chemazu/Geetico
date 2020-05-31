@@ -1,10 +1,9 @@
-$primary:green;
+$primary:rgb(32, 233, 32);
 $auth:orange;
 $action:blue;
 .btn{
   box-sizing: border-box;
   appearance: none;
-  background-color: transparent;
   padding: 10px 25px;
   font-size: 1rem;
   font-weight: 400;
@@ -15,15 +14,18 @@ $action:blue;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
+
 .primary{
   color:$primary;
   border: 2px solid $primary;
-  border-radius: 0.6em;
-  &:hover,:focus{
-    box-shadow: 0 0 40px 40px $primary inset;
+  width: 100%;
+  &:hover{
+    box-shadow: 0 0 40px 40px blue inset;
     color: #fff;
+    border: 2px solid blue;
   }
 }
+
 .auth{
   color:$auth;
   border: 2px solid $auth;
@@ -33,6 +35,7 @@ $action:blue;
     color: #fff;
   }
 }
+
 .action {
   color:$action;
   border: 2px solid $action;

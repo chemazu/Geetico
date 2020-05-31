@@ -14,10 +14,20 @@ import Shop from './View/Shop/Shop';
 import DisplayCard from './View/DisplayCard/DisplayCard';
 import Checkout from './View/Checkout/Checkout';
 
+
 export default class App extends Component {
   static contextType = Context
   unsubscribeFromAuth = null;
   componentDidMount(){
+    
+    if(localStorage.getItem("cart"))
+    {
+      console.log(localStorage)
+    }
+    else{
+      localStorage.setItem("cart","[]")
+    }
+    console.log(localStorage)
     const{user} = this.context
     this.unsubscribeFromAuth=auth.onAuthStateChanged (async userAuth => {
       createUserProfile(userAuth)
@@ -30,30 +40,47 @@ export default class App extends Component {
   constructor(){
     super()
     this.state={
-        toggle : true
+        toggle : true,
+        mobile:true
     }
 }
-  handletoggle = () =>{
+  handleToggle = () =>{
   this.setState({toggle:!this.state.toggle})
+  if (!this.state.mobile){
+    this.setState({mobile:!this.state.mobile})
+  }
+  console.log(this.state)
 } 
+handleMobile = ()=>{
+  this.setState({mobile:!this.state.mobile})
+  if (!this.state.toggle){
+    this.setState({toggle:!this.state.toggle})
+  }
+}
   render() {
     
     return (
         <Router basename={process.env.PUBLIC_URL}>
           <div className="App">
-          <Header handletoggle={this.handletoggle} toggle={this.state.toggle} Cart ={<p className="nav-links" onClick={this.handletoggle}>View Cart</p>}/>
-          
+          <Header 
+          toggle = {this.state.toggle}
+          handleToggle = {this.handleToggle}
+          mobile={this.state.mobile}
+          handleMobile = {this.handleMobile}
+          />
+          <div className="main">
             <Switch>
               <Route exact path ="/" component={Home}></Route>
               <Route exact path ="/login" component={Login}></Route>
               <Route exact path="/Dashboard" component={Dashboard}></Route> 
               <Route exact path ="/Register" component={Register}></Route>
               <Route  exact path ="/Categories" component={Categories}></Route>
-              <Route exact path ="/Shop" component={Shop}></Route>
+              <Route exact path ="/Shop/:category" component={Shop}></Route>
               <Route exact path ="/Checkout" component={Checkout}></Route>
               <Route exact path ="/display" component={DisplayCard}></Route>
             </Switch>
           <Footer/>
+          </div>
         </div>
         </Router>
     );

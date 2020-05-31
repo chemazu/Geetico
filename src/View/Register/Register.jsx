@@ -41,40 +41,79 @@ export class Register extends Component {
     }
     render() {
         const { displayName, email, password, confirmPassword } = this.state;
-        return (
-            <div className="signUpWrapper">
-            <div className ="signUp">
-              <form onSubmit={this.handleSubmit}>
-                  <input type="text"
-                  name='displayName'
-                  placeholder="Name"
-                  value= {displayName}
-                  onChange ={this.handleChange}
-                  />
-                  <input type="email"
-                  placeholder="Email"
-                  name='email'
-                  value= {email}
-                  onChange ={this.handleChange}
-                  />
-                  <input type="password"
-                  placeholder="Password"
-                  name='password'
-                  value= {password}
-                  onChange ={this.handleChange}
-                  />
-                  <input type="password"
-                  name='confirmPassword'
-                  placeholder="Confirm Password"
-                  value= {confirmPassword}
-                  onChange ={this.handleChange}
-                  />
-                  <Button Buttontype="auth" type="submit" content="Sign Up"/>
-              </form> 
-              </div>
+        return(
+            <div className="signUp">
+           <div className="first"><h2>Register</h2></div>
+           <div className="second">
+                <form onSubmit={this.handleSubmit}>
+                    <input type="text"
+                    name='displayName'
+                    placeholder="Name"
+                    value= {displayName}
+                    onChange ={this.handleChange}
+                    />
+                    <input type="email"
+                    placeholder="Email"
+                    name='email'
+                    value= {email}
+                    onChange ={this.handleChange}
+                    />
+                    <input type="password"
+                    placeholder="Password"
+                    name='password'
+                    value= {password}
+                    onChange ={this.handleChange}
+                    />
+                    <input type="password"
+                    name='confirmPassword'
+                    placeholder="Confirm Password"
+                    value= {confirmPassword}
+                    onChange ={this.handleChange}
+                    />
+                </form>
+           </div>
+           <div className="third">
+                <Button Buttontype="auth" type="submit" content="Sign Up"/>
+            </div>    
             </div>
         )
+        
     }
 }
 
 export default Register
+
+
+// return (
+//     <div className="signUpWrapper">
+//     <div className ="signUp">
+//       <form onSubmit={this.handleSubmit}>
+//           <input type="text"
+//           name='displayName'
+//           placeholder="Name"
+//           value= {displayName}
+//           onChange ={this.handleChange}
+//           />
+//           <input type="email"
+//           placeholder="Email"
+//           name='email'
+//           value= {email}
+//           onChange ={this.handleChange}
+//           />
+//           <input type="password"
+//           placeholder="Password"
+//           name='password'
+//           value= {password}
+//           onChange ={this.handleChange}
+//           />
+//           <input type="password"
+//           name='confirmPassword'
+//           placeholder="Confirm Password"
+//           value= {confirmPassword}
+//           onChange ={this.handleChange}
+//           />
+//           <Button Buttontype="auth" type="submit" content="Sign Up"/>
+//       </form> 
+//       </div>
+//     </div>
+// )
