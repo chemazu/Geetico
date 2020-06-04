@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Geetico/static/css/main.4ebd00e5.chunk.css",
-    "main.js": "/Geetico/static/js/main.ef2473c5.chunk.js",
-    "main.js.map": "/Geetico/static/js/main.ef2473c5.chunk.js.map",
+    "main.css": "/Geetico/static/css/main.3209bac0.chunk.css",
+    "main.js": "/Geetico/static/js/main.30fdeab2.chunk.js",
+    "main.js.map": "/Geetico/static/js/main.30fdeab2.chunk.js.map",
     "runtime-main.js": "/Geetico/static/js/runtime-main.0471bccf.js",
     "runtime-main.js.map": "/Geetico/static/js/runtime-main.0471bccf.js.map",
     "static/css/2.930d8355.chunk.css": "/Geetico/static/css/2.930d8355.chunk.css",
-    "static/js/2.abd3eaa8.chunk.js": "/Geetico/static/js/2.abd3eaa8.chunk.js",
-    "static/js/2.abd3eaa8.chunk.js.map": "/Geetico/static/js/2.abd3eaa8.chunk.js.map",
+    "static/js/2.fbb83900.chunk.js": "/Geetico/static/js/2.fbb83900.chunk.js",
+    "static/js/2.fbb83900.chunk.js.map": "/Geetico/static/js/2.fbb83900.chunk.js.map",
     "index.html": "/Geetico/index.html",
-    "precache-manifest.b1a8a3c61be985561f0e95d197b2c4d7.js": "/Geetico/precache-manifest.b1a8a3c61be985561f0e95d197b2c4d7.js",
+    "precache-manifest.d7491075e590e635be8e3f67f9dc5fe6.js": "/Geetico/precache-manifest.d7491075e590e635be8e3f67f9dc5fe6.js",
     "service-worker.js": "/Geetico/service-worker.js",
     "static/css/2.930d8355.chunk.css.map": "/Geetico/static/css/2.930d8355.chunk.css.map",
-    "static/css/main.4ebd00e5.chunk.css.map": "/Geetico/static/css/main.4ebd00e5.chunk.css.map",
-    "static/js/2.abd3eaa8.chunk.js.LICENSE.txt": "/Geetico/static/js/2.abd3eaa8.chunk.js.LICENSE.txt",
+    "static/css/main.3209bac0.chunk.css.map": "/Geetico/static/css/main.3209bac0.chunk.css.map",
+    "static/js/2.fbb83900.chunk.js.LICENSE.txt": "/Geetico/static/js/2.fbb83900.chunk.js.LICENSE.txt",
     "static/media/1.jpg": "/Geetico/static/media/1.bcff8131.jpg",
     "static/media/2.jpg": "/Geetico/static/media/2.729f7124.jpg",
     "static/media/2.png": "/Geetico/static/media/2.7bfd5266.png",
@@ -21,13 +21,15 @@
     "static/media/Adverts.jpg": "/Geetico/static/media/Adverts.5315c584.jpg",
     "static/media/Adverts2.jpg": "/Geetico/static/media/Adverts2.68c975ae.jpg",
     "static/media/Logo.png": "/Geetico/static/media/Logo.ac5e4a14.png",
+    "static/media/delivery-truck.png": "/Geetico/static/media/delivery-truck.a49f2cfa.png",
+    "static/media/diamond.png": "/Geetico/static/media/diamond.a73749dc.png",
     "static/media/slick-theme.css": "/Geetico/static/media/slick.f97e3bbf.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.0471bccf.js",
     "static/css/2.930d8355.chunk.css",
-    "static/js/2.abd3eaa8.chunk.js",
-    "static/css/main.4ebd00e5.chunk.css",
-    "static/js/main.ef2473c5.chunk.js"
+    "static/js/2.fbb83900.chunk.js",
+    "static/css/main.3209bac0.chunk.css",
+    "static/js/main.30fdeab2.chunk.js"
   ]
 }
