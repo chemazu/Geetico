@@ -13,7 +13,7 @@ export default function Card({item}) {
             cart.map(content=> {if(content.id === item.id){ content.quantity++; total.set(prev=>[...prev])}})
         }
         else{cart.push({...item, quantity:1})}
-        console.log(cart)
+        console.log(cart, "new")
         localStorage.setItem("cart",JSON.stringify(cart))
         console.log(localStorage)
     }
