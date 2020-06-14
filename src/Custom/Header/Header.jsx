@@ -32,7 +32,7 @@ export default function Header({toggle,handleMobile, handleToggle,mobile}) {
             <div className="actions">
                 <p onClick={handleMobile}>Categories</p>
                 {mobile?null:<CategoryMenu/>}
-                <p onClick={handleToggle} className="cartIconWrapper"><img src={cartLogo} alt="cart"className="cartLogo"/>{cart.length?cart.length:null}</p>
+                {/* <p onClick={handleToggle} className="cartIconWrapper"><img src={cartLogo} alt="cart"className="cartLogo"/>{cart.length?cart.length:null}</p> */}
                 {toggle? null:<ShoppingCart/>}
             <div className="buttonWrapper">
                 {user.get?
@@ -44,11 +44,11 @@ export default function Header({toggle,handleMobile, handleToggle,mobile}) {
         <div className="mobileHeader">
         <div className="icon">
             <img onClick={handleMobile} src={icon} alt="Geetico"/>
-            {mobile?null:<PhoneMenu/>}
+            {mobile?null:<PhoneMenu close={handleMobile}/>}
         </div>
         <div className="mobileLogoWrapper"><img src={LogoImage} alt="Geetico" className="mobileLogo"/><p>Geetico</p></div>
         <div className="mobNav">
-            <p onClick={handleToggle} className="cartIconWrapper"><img src={cartLogo} alt="cart" className="cartLogo"/>{cart.length?cart.length:null}</p>
+            {/* <p onClick={handleToggle} className="cartIconWrapper"><img src={cartLogo} alt="cart" className="cartLogo"/>{cart.length?cart.length:null}</p> */}
             {toggle? null:<ShoppingCart/>}
         </div> 
         </div>

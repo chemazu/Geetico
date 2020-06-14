@@ -22,10 +22,10 @@
 }
 
 .primary:hover, .primary :focus {
-  -webkit-box-shadow: 0 0 40px 40px blue inset;
-          box-shadow: 0 0 40px 40px blue inset;
+  -webkit-box-shadow: 0 0 40px 40px #41549b inset;
+          box-shadow: 0 0 40px 40px #41549b inset;
   color: #fff;
-  border: 2px solid blue;
+  border: 2px solid #41549b;
 }
 
 .auth {
@@ -41,14 +41,14 @@
 }
 
 .action {
-  color: blue;
-  border: 2px solid blue;
+  color: #41549b;
+  border: 2px solid #41549b;
   border-radius: 0.6em;
 }
 
 .action:hover, .action :focus {
-  -webkit-box-shadow: 0 0 40px 40px blue inset;
-          box-shadow: 0 0 40px 40px blue inset;
+  -webkit-box-shadow: 0 0 40px 40px #41549b inset;
+          box-shadow: 0 0 40px 40px #41549b inset;
   color: #fff;
 }
 /*# sourceMappingURL=Button.css.map */

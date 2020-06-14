@@ -1,6 +1,6 @@
 $primary:rgb(32, 233, 32);
 $auth:orange;
-$action:blue;
+$action:#41549b;
 .btn{
   box-sizing: border-box;
   appearance: none;
@@ -20,9 +20,9 @@ $action:blue;
   border: 2px solid $primary;
   width: 100%;
   &:hover{
-    box-shadow: 0 0 40px 40px blue inset;
+    box-shadow: 0 0 40px 40px #41549b inset;
     color: #fff;
-    border: 2px solid blue;
+    border: 2px solid #41549b;
   }
 }
 

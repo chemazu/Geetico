@@ -18,8 +18,8 @@ export default function CategorySlider({pepsi,category,slides}) {
         activeItemIndex={activeItemIndex}
         numberOfCards={slides}
         gutter={20}
-        leftChevron={<button>{'<'}</button>}
-        rightChevron={<button>{'>'}</button>}
+        leftChevron={<p>{'<'}</p>}
+        rightChevron={<p>{'>'}</p>}
         outsideChevron
         chevronWidth={chevronWidth}
         slidesToScroll={2}
