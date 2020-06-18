@@ -37,16 +37,16 @@ export default function Home() {
                 <BenefitsSlider/>
                 </div>
                 <div className="categories">
-                    <Link to ="/Shop/TopSellers"><h4>Top Sellers</h4></Link>
-                    <Link to ="/Shop"><h4>New Arrivals</h4></Link>
-                    <Link to ="/Shop"><h4>Essentials</h4></Link>
-                    <Link to ="/Shop"><h4>Home</h4></Link>
-                    <Link to ="/Shop"><h4>Home</h4></Link>
-                    <Link to ="/Shop/TopSellers"><h4>Top Sellers</h4></Link>
-                    <Link to ="/Shop"><h4>New Arrivals</h4></Link>
-                    <Link to ="/Shop"><h4>Essentials</h4></Link>
-                    <Link to ="/Shop"><h4>Home</h4></Link>
-                    <Link to ="/Shop"><h4>Home</h4></Link>   
+                <Link to ="/Shop/TopSellers"><h5 className="TS">Top Sellers</h5></Link>
+                <Link to ="/Shop/TopSellers"><h5 className="NewA">New Arrivals</h5></Link>
+                <Link to ="/Shop/TopSellers"><h5 className="GeeticoO">Geetico Originals</h5></Link>
+                <Link to ="/Shop/TopSellers"><h5 className="BlackE">Black-Excellence</h5></Link>
+                <Link to ="/Shop/TopSellers"><h5 className="DesignedC">Designed & Crafted</h5></Link>
+                <Link to ="/Shop/TopSellers"><h5 className="EverydayL">Everyday Lifestyle</h5></Link>
+                <Link to ="/Shop/TopSellers"><h5 className="">Home & Office</h5></Link>
+                <Link to ="/Shop/TopSellers"><h5 className="ToolsE">Tools & Equipments</h5></Link>
+                <Link to ="/Shop/TopSellers"><h5 className="">Fashion & Wellness</h5></Link>
+                <Link to ="/Shop/TopSellers"><h5 className="">Essentials</h5></Link>    
                 </div>
                 <h2 style={{"textAlign":"center","padding":"10px"}}>Popular Categories</h2>
                 

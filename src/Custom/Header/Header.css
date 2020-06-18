@@ -24,7 +24,7 @@
 }
 
 .header .actions p:hover {
-  color: greenyellow;
+  color: lime;
   cursor: pointer;
 }
 

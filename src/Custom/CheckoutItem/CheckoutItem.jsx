@@ -36,9 +36,9 @@ console.log(cart)
           </div>
           <span className='name'>{Name}</span>
           <span className='quantity'>
-            <span className="cartModifier" onClick={increase}>+</span>
+    <span className="cartModifier" onClick={decrease}>{"<"}</span>
             {quantity}
-            <span className="cartModifier" onClick={decrease}>-</span>
+    <span className="cartModifier" onClick={increase}>{">"}</span>
           </span>
           <span className='price'>N{Price}</span>
           <span className='remove'onClick={removeItem}>Remove</span>

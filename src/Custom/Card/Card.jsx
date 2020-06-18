@@ -25,7 +25,7 @@ export default function Card({item}) {
                     <h4>{Name}</h4>
                 <div>
                 <h3>N{Price}</h3>
-                <p><button onClick={addToCart}>Add to Cart</button></p>
+                <p onClick={addToCart}>Add to Cart</p>
                 </div>
                 </div>
                 

@@ -14,7 +14,7 @@
 //         text-decoration: none;
 //         color:black ;
 //         &:hover{
-//             color:yellowgreen ;
+//             color:lime ;
 //         }
 //         h4,h2{
 //             border-bottom: 1px solid rgb(223, 220, 220);
@@ -39,7 +39,7 @@ a{
 }
 .phoneMenu{
     height: 100vh;
-    width: 75%;
+    width: 40%;
     background-color: white;
     .closeBar{
         padding: 15px 7.5px;
@@ -50,14 +50,14 @@ a{
         justify-content: center;
     }
     .phoneMenuButton{
-        padding: 30px 30px;
+        padding: 25px;
         padding-bottom: 0px;
     }
     .links {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 20px 30px;
+        padding: 15px 30px;
         h3{
             padding: 7.5px 0px;
             
@@ -73,12 +73,13 @@ a{
         }
         h5{
             border-bottom: 1px solid grey;
-            padding:10px 0px ;
+            width: 85%;
+            padding:7.5px 0px ;
             padding-left: 10px;
             color: #666
         }
         .socialMedia{
-            padding-top: 20px ;
+            padding-top: 10px ;
             .socialLogos{
                 display: flex;
                 justify-content: space-between;
